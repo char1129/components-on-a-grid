@@ -12,7 +12,64 @@ img {
   width: 100%;
 }
 
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main";
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
+  display: grid;
+  grid-area: header;
+  /* grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
 }
+
+.pano {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: main;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+/* .banner {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.pano {
+  position: absolute;
+  z-index: 1;
+}
+
+h1 {
+  display: inline;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+
+nav {
+  display: grid;
+  position: relative;
+  z-index: 3;
+}
+
+main {
+  display: grid;
+  grid-column: 1fr 1fr;
+
+} */
