@@ -26,15 +26,15 @@ body {
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid.*/
+  /*
+  Remove the <header> box and allow us to directly apply header’s children to the grid.
+  */
+
   grid-area: header;
   display: inline-grid;
-  margin-bottom: .5rem;
   padding: 0;
   margin: 1rem;
 }
-
-
 
 .pano {
   grid-area: header;
@@ -84,7 +84,7 @@ main {
   margin: 0 .5rem;
 }
 
-figure{
+figure {
   padding: 0 .5rem;
   margin: 0;
 }
