@@ -1,8 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
   font-family: Georgia, serif;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 *,
@@ -66,6 +65,7 @@ ul {
 }
 
 ul li {
+  font-family: "Patua One", sans-serif;
   display: inline;
   color: #fff;
   text-decoration: none;
@@ -90,6 +90,7 @@ figure {
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   font-weight: bold;
   outline-color: #f2f1ed;
   color: #30658d;
@@ -97,4 +98,6 @@ h2 {
 
 p {
   font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
